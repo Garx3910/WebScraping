@@ -15,7 +15,7 @@ def readNumber(l,a):
 username= input("Please enter username/email\n")
 password=input("Please enter password\n")
 captcha=0
-driver= webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+driver= webdriver.Firefox()
 driver.get("https://moodle.iitd.ac.in/login/index.php")
 text = driver.find_element_by_id("login").text
 for i in range(len(text)):
